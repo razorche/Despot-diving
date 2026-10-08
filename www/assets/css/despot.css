@@ -6,11 +6,11 @@
   --despot-sand: #e8dcc8;
   --despot-deep: #0c2d3a;
   --despot-glass: rgba(8, 28, 38, 0.55);
-  --font-display: "DM Serif Text", Georgia, serif;
-  --font-body: "Hanken Grotesk", system-ui, sans-serif;
-  --font-ui: "Instrument Sans", system-ui, sans-serif;
-  --font-label: "Encode Sans Expanded", "Instrument Sans", system-ui, sans-serif;
-  --font-editorial: "DM Serif Text", Georgia, serif;
+  --font-display: "Eagle Lake", cursive;
+  --font-body: "Eagle Lake", cursive;
+  --font-ui: "Eagle Lake", cursive;
+  --font-label: "Eagle Lake", cursive;
+  --font-editorial: "Eagle Lake", cursive;
 }
 
 html {
@@ -48,7 +48,7 @@ h6,
 .footer-section .footer-text-item h2 {
   font-family: var(--font-display);
   font-weight: 400;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 h1,
@@ -62,11 +62,11 @@ h1,
 .back-to-top,
 .despot-footer-eyebrow {
   font-family: var(--font-label);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 }
 
 #despot-framer-nav,
-#despot-framer-nav * {
+#despot-framer-nav *:not(i):not(svg):not(path) {
   font-family: var(--font-ui) !important;
 }
 
@@ -681,4 +681,39 @@ section {
 .team-section .team-member-name,
 .team-section-2 .team-member-name {
   perspective: none;
+}
+
+/* Eagle Lake — site-wide (tema koristi Plus Jakarta u main.css) */
+body,
+.main-wrapper,
+.nice-select,
+.mean-container a.meanmenu-reveal,
+.offcanvas__info,
+.offcanvas__wrapper {
+  font-family: var(--font-body) !important;
+}
+
+body :where(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span,
+    li,
+    label,
+    button,
+    input,
+    textarea,
+    select,
+    td,
+    th,
+    .sub-title,
+    .theme-btn,
+    .section-title
+  ):not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not(.fad):not(.fat):not([class*=" fa-"]) {
+  font-family: var(--font-body);
 }

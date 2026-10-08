@@ -1,0 +1,7 @@
+<svg width="200" height="36" viewBox="0 0 200 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="18" cy="18" r="16" stroke="#1565A8" stroke-width="2.5"/>
+<path d="M8 20C12 14 16 12 18 12C20 12 24 14 28 20" stroke="#1565A8" stroke-width="2" stroke-linecap="round"/>
+<path d="M10 24C14 18 16 16 18 16C20 16 22 18 26 24" stroke="#C9A227" stroke-width="1.5" stroke-linecap="round"/>
+<text x="42" y="25" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#0A2540">DESPOT</text>
+<text x="132" y="25" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="22" font-weight="600" fill="#1565A8">DIVE</text>
+</svg>

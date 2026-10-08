@@ -1,0 +1,27 @@
+{
+  "name": "kopiranje-templata-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve www -l 3000",
+    "build:nav": "npm run build:nav --prefix app",
+    "start": "npm run build:nav && serve www -l 3000",
+    "dev": "npm run start",
+    "mirror": "node mirror.mjs && node fetch-missing-assets.mjs",
+    "brand": "node scripts/apply-despot-brand.mjs",
+    "rework": "node scripts/master-rework.mjs && node scripts/translate-pass.mjs && node scripts/final-cleanup.mjs && node scripts/fix-broken-html.mjs",
+    "dev:app": "npm run dev --prefix app",
+    "build:app": "npm run build --prefix app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "website-scraper": "^6.0.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}

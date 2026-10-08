@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 52" fill="none" role="img" aria-label="Despot Diving Club">
+  <defs>
+    <linearGradient id="despotLogoDGrad" x1="6" y1="4" x2="42" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a8e8ec"/>
+      <stop offset="0.45" stop-color="#3ecfd6"/>
+      <stop offset="1" stop-color="#1a6b8a"/>
+    </linearGradient>
+    <linearGradient id="despotLogoWaveGrad" x1="8" y1="32" x2="40" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3ecfd6"/>
+      <stop offset="1" stop-color="#1565a8"/>
+    </linearGradient>
+    <linearGradient id="despotLogoTextGrad" x1="58" y1="12" x2="200" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8f6f8"/>
+      <stop offset="1" stop-color="#8ec5cf"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path fill="url(#despotLogoDGrad)" d="M8 4h14c11.6 0 21 9.4 21 21s-9.4 21-21 21H8V4zm10 8v28c6.1 0 11-4.9 11-11S24.1 12 18 12z"/>
+    <path fill="url(#despotLogoWaveGrad)" opacity="0.85" d="M10 36c4 2 8 2 12 0s8-2 12 0 8 2 12 0v6H10v-6z"/>
+    <path fill="#e8f6f8" d="M22 14l6 4-2 3 4 6-3 1-3-5-2 8h-3l1-9-2-4 4-4z"/>
+    <circle cx="26" cy="13" r="2.2" fill="#e8f6f8"/>
+  </g>
+  <text x="58" y="34" fill="url(#despotLogoTextGrad)" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" letter-spacing="0.06em">DESP<tspan fill="#3ecfd6">O</tspan>T</text>
+  <path stroke="#3ecfd6" stroke-width="1.2" stroke-linecap="round" fill="none" d="M168 28c2 1.5 4 1.5 6 0"/>
+  <path stroke="#5ee0e6" stroke-width="1" stroke-linecap="round" fill="none" d="M166 31c3 2 6 2 9 0"/>
+  <line x1="58" y1="42" x2="78" y2="42" stroke="#c4a574" stroke-width="1"/>
+  <text x="145" y="44" text-anchor="middle" fill="#8ec5cf" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" font-weight="500" letter-spacing="0.28em">DIVING CLUB</text>
+  <line x1="212" y1="42" x2="232" y2="42" stroke="#c4a574" stroke-width="1"/>
+</svg>

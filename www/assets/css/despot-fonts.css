@@ -1,0 +1,67 @@
+/* Self-hosted fonts — Google Fonts zip pack (OFL) */
+
+@font-face {
+  font-family: "DM Serif Text";
+  src: url("../fonts/despot-pack/DM_Serif_Text/DMSerifText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Serif Text";
+  src: url("../fonts/despot-pack/DM_Serif_Text/DMSerifText-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../fonts/despot-pack/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../fonts/despot-pack/Hanken_Grotesk/HankenGrotesk-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../fonts/despot-pack/Instrument_Sans/InstrumentSans-VariableFont_wdth%2Cwght.ttf") format("truetype");
+  font-weight: 400 700;
+  font-stretch: 75% 100%;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../fonts/despot-pack/Instrument_Sans/InstrumentSans-Italic-VariableFont_wdth%2Cwght.ttf") format("truetype");
+  font-weight: 400 700;
+  font-stretch: 75% 100%;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Encode Sans Expanded";
+  src: url("../fonts/despot-pack/Encode_Sans_Expanded/EncodeSansExpanded-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Encode Sans Expanded";
+  src: url("../fonts/despot-pack/Encode_Sans_Expanded/EncodeSansExpanded-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,88 @@
+{
+  "index.html": {
+    "title": "Ronjenje Budva | Despot Ronilački Klub",
+    "description": "Despot Ronilački Klub u Budvi — probni zaron, vođene ture, noćno ronjenje i PADI kursevi duž budvanske obale i Jadrana.",
+    "h1": "JADRAN. ISPOD POVRŠINE.",
+    "ogType": "website"
+  },
+  "about.html": {
+    "title": "O nama | Despot Ronilački Klub Budva",
+    "description": "Upoznajte Despot Ronilački Klub — tim instruktora, oprema i pristup ronjenju na Budvanskoj rivijeri.",
+    "breadcrumb": "O nama"
+  },
+  "service.html": {
+    "title": "Ronjenje i usluge | Despot Budva",
+    "description": "Vođeno ronjenje, probni zaron, noćni zaron i podvodne ture za početnike i iskusne ronioce u Budvi.",
+    "breadcrumb": "Ronjenje"
+  },
+  "service-details.html": {
+    "title": "Detalji usluge | Despot Ronilački Klub",
+    "description": "Program, trajanje i oprema za izabranu ronilačku uslugu u Despot Ronilačkom Klubu, Budva.",
+    "breadcrumb": "Detalji usluge"
+  },
+  "project.html": {
+    "title": "Ronilačke lokacije Budva | Despot",
+    "description": "Podvodne pećine, grebeni i olupine duž obale Budve — lokacije koje posjećujemo sa Despot klubom.",
+    "breadcrumb": "Lokacije"
+  },
+  "project-details.html": {
+    "title": "Detalj lokacije | Despot Ronilački Klub",
+    "description": "Opis ronilačke lokacije, dubine, vidljivosti i nivo iskustva — Despot, Budva.",
+    "breadcrumb": "Lokacija"
+  },
+  "courses.html": {
+    "title": "Ronilački kursevi Budva | Despot",
+    "description": "PADI i edukativni programi u Budvi — od prvog daha do naprednih certifikata.",
+    "breadcrumb": "Kursevi"
+  },
+  "courses-details.html": {
+    "title": "Detalj kursa | Despot Ronilački Klub",
+    "description": "Sadržaj, trajanje i uslovi za ronilački kurs Despot kluba u Budvi.",
+    "breadcrumb": "Kurs"
+  },
+  "team.html": {
+    "title": "Tim instruktora | Despot Budva",
+    "description": "Sertifikovani instruktori Despot Ronilačkog Kluba — iskustvo na Jadranu.",
+    "breadcrumb": "Tim"
+  },
+  "team-details.html": {
+    "title": "Profil instruktora | Despot",
+    "description": "Biografija i specijalizacija instruktora Despot Ronilačkog Kluba, Budva.",
+    "breadcrumb": "Instruktor"
+  },
+  "faq.html": {
+    "title": "Česta pitanja | Ronjenje Budva — Despot",
+    "description": "Odgovori o probnom zaronu, opremi, bezbednosti i kursevima u Despot Ronilačkom Klubu.",
+    "breadcrumb": "FAQ"
+  },
+  "contact.html": {
+    "title": "Kontakt | Despot Ronilački Klub Budva",
+    "description": "Rezervišite zaron: hello@despotdiving.me · +382 67 000 247 · Budva, Crna Gora.",
+    "breadcrumb": "Kontakt"
+  },
+  "news.html": {
+    "title": "Blog | Despot Ronilački Klub",
+    "description": "Priče sa mora, saveti za ronioce i novosti iz Despot kluba u Budvi.",
+    "breadcrumb": "Blog"
+  },
+  "news-grid.html": {
+    "title": "Blog — pregled | Despot Budva",
+    "description": "Arhiva članaka o ronjenju na Jadranu i aktivnostima kluba.",
+    "breadcrumb": "Blog"
+  },
+  "news-details.html": {
+    "title": "Članak | Despot Ronilački Klub",
+    "description": "Blog Despot Ronilačkog Kluba — ronjenje, lokacije i iskustva u Budvi.",
+    "breadcrumb": "Članak"
+  },
+  "galerija.html": {
+    "title": "Galerija | Despot Ronilački Klub Budva",
+    "description": "Fotografije ronjenja, opreme i obale Budve — Despot Ronilački Klub.",
+    "breadcrumb": "Galerija"
+  },
+  "404.html": {
+    "title": "Stranica nije pronađena | Despot",
+    "description": "Tražena stranica ne postoji. Vratite se na početnu Despot Ronilačkog Kluba.",
+    "breadcrumb": "404"
+  }
+}

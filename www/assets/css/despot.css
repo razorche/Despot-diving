@@ -1,0 +1,684 @@
+/* Despot Ronilački Klub — brand layer */
+@import url("despot-fonts.css");
+
+:root {
+  --despot-aqua: #3ecfd6;
+  --despot-sand: #e8dcc8;
+  --despot-deep: #0c2d3a;
+  --despot-glass: rgba(8, 28, 38, 0.55);
+  --font-display: "DM Serif Text", Georgia, serif;
+  --font-body: "Hanken Grotesk", system-ui, sans-serif;
+  --font-ui: "Instrument Sans", system-ui, sans-serif;
+  --font-label: "Encode Sans Expanded", "Instrument Sans", system-ui, sans-serif;
+  --font-editorial: "DM Serif Text", Georgia, serif;
+}
+
+html {
+  font-family: var(--font-body);
+}
+
+body,
+p,
+li,
+td,
+th,
+figcaption,
+blockquote,
+input,
+textarea,
+select,
+button,
+label,
+a {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.despot-hero-title,
+.hero-content h1,
+.section-title h2,
+.section-title h3,
+.gt_title_anim,
+.footer-section .footer-text-item h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+h1,
+.despot-hero-title {
+  font-weight: 400;
+}
+
+.sub-title,
+.theme-btn,
+.theme-btn .txt,
+.back-to-top,
+.despot-footer-eyebrow {
+  font-family: var(--font-label);
+  letter-spacing: 0.06em;
+}
+
+#despot-framer-nav,
+#despot-framer-nav * {
+  font-family: var(--font-ui) !important;
+}
+
+#despot-framer-nav a.despot-nav-link {
+  color: #a8e6ed !important;
+}
+
+#despot-framer-nav a.despot-nav-link--active {
+  color: #fff !important;
+}
+
+p {
+  line-height: 1.65;
+}
+
+.main-menu nav > ul > li > a,
+.despot-nav a {
+  font-family: var(--font-ui);
+}
+
+/* Tema ponekad forsira Plus Jakarta — brand fontovi imaju prioritet */
+body,
+.main-menu,
+.section-title,
+.hero-content,
+.news-content,
+.service-card-items,
+.footer-section,
+.faq-section,
+.courses-content,
+.testimonial-content,
+.about-section-1,
+.team-section {
+  font-family: var(--font-body);
+}
+
+/* Legacy full-width header (replaced by React pill nav) */
+.despot-header.header-1,
+#header-sticky.despot-header {
+  display: none !important;
+}
+
+#despot-framer-nav {
+  min-height: 0;
+}
+
+.service-card-items .hover-image {
+  display: none !important;
+}
+
+/* —— Floating navbar (legacy styles, kept for reference) —— */
+.despot-header.header-1 {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding-top: 1rem;
+}
+
+.despot-header.header-1.sticky,
+.despot-header.header-1.header-sticky {
+  padding-top: 0.5rem;
+}
+
+.despot-header .header-main,
+.despot-header .mega-menu-wrapper {
+  background: transparent !important;
+  border: none !important;
+}
+
+.despot-header .header-left .shape,
+.despot-header .header-right .shape-2,
+.despot-header .header-btn .title {
+  display: none !important;
+}
+
+.despot-nav-shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0.65rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: var(--despot-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.despot-header.sticky .despot-nav-shell,
+.despot-header.header-sticky .despot-nav-shell {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(12, 45, 58, 0.12);
+  box-shadow: 0 12px 40px rgba(12, 45, 58, 0.12);
+}
+
+.despot-brand-logo-link {
+  display: inline-block;
+  text-decoration: none !important;
+  line-height: 0;
+}
+
+.despot-brand-logo {
+  display: block;
+  width: auto;
+  max-width: min(220px, 72vw);
+  height: auto;
+  max-height: 48px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.despot-brand-logo--footer {
+  max-height: 44px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+}
+
+.offcanvas__logo .despot-brand-logo {
+  max-width: 200px;
+  max-height: 42px;
+}
+
+.despot-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+  text-decoration: none !important;
+  min-width: 120px;
+}
+
+.despot-logo-title {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.22em;
+  color: #fff;
+}
+
+.despot-logo-sub {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--despot-aqua);
+  margin-top: 0.15rem;
+}
+
+.despot-header.sticky .despot-logo-title,
+.despot-header.header-sticky .despot-logo-title {
+  color: var(--despot-deep);
+}
+
+.despot-header.sticky .despot-logo-sub,
+.despot-header.header-sticky .despot-logo-sub {
+  color: #1565a8;
+}
+
+.despot-header .header-logo,
+.despot-header .header-logo-2 {
+  display: none !important;
+}
+
+.despot-nav .main-menu > nav > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0 0.65rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.despot-header .header-main .main-menu ul li {
+  display: inline-block;
+  margin-inline-end: 0 !important;
+  float: none;
+}
+
+.despot-nav .main-menu > nav > ul > li > a {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92) !important;
+  padding: 0.35rem 0.15rem;
+  position: relative;
+  white-space: nowrap;
+}
+
+@media (min-width: 1400px) {
+  .despot-nav .main-menu > nav > ul > li > a {
+    font-size: 0.74rem;
+  }
+  .despot-nav .main-menu > nav > ul {
+    gap: 0 0.85rem;
+  }
+}
+
+.despot-header.sticky .despot-nav .main-menu > nav > ul > li > a,
+.despot-header.header-sticky .despot-nav .main-menu > nav > ul > li > a {
+  color: var(--despot-deep) !important;
+}
+
+.despot-nav .main-menu > nav > ul > li > a:hover,
+.despot-nav .main-menu > nav > ul > li.active > a {
+  color: var(--despot-aqua) !important;
+}
+
+.despot-nav .submenu,
+.despot-nav .homemenu-items,
+.despot-nav li.has-dropdown > .submenu {
+  display: none !important;
+}
+
+.despot-nav li.has-dropdown > a::after {
+  display: none !important;
+}
+
+.despot-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.despot-cta.theme-btn {
+  border-radius: 999px !important;
+  padding: 0.65rem 1.25rem !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  background: var(--despot-aqua) !important;
+  border-color: var(--despot-aqua) !important;
+  color: var(--despot-deep) !important;
+}
+
+.despot-header.sticky .despot-cta.theme-btn,
+.despot-header.header-sticky .despot-cta.theme-btn {
+  background: var(--theme) !important;
+  color: #fff !important;
+}
+
+.despot-header .sidebar__toggle {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.despot-header .sidebar__toggle img {
+  width: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.despot-header.sticky .sidebar__toggle,
+.despot-header.header-sticky .sidebar__toggle {
+  border-color: rgba(12, 45, 58, 0.2);
+}
+
+.despot-header.sticky .sidebar__toggle img,
+.despot-header.header-sticky .sidebar__toggle img {
+  filter: none;
+}
+
+@media (max-width: 1199px) {
+  .despot-nav .main-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .despot-header .mean-menu-area {
+    display: none;
+  }
+}
+
+/* Hero typography */
+.despot-hero-title {
+  font-size: clamp(2.35rem, 6vw, 4.75rem);
+  line-height: 1.05;
+  color: #fff;
+  max-width: 14ch;
+  margin-bottom: 0;
+}
+
+.despot-hero-line {
+  display: block;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.despot-hero-accent {
+  display: block;
+  color: var(--despot-aqua);
+  margin-top: 0.15em;
+}
+
+.despot-hero-sand {
+  display: block;
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 0.55em;
+  color: var(--despot-sand);
+  margin-top: 0.35em;
+  letter-spacing: 0.02em;
+}
+
+.hero-right-item {
+  position: relative;
+}
+
+.hero-right-item .despot-hero-lead {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.35vw, 1.28rem);
+  font-weight: 500;
+  line-height: 1.55;
+  color: #fff;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
+  max-width: 28ch;
+  margin-top: 1.25rem;
+}
+
+.hero-right-item .despot-hero-lead::before {
+  content: "";
+  position: absolute;
+  inset: -0.65rem -0.85rem;
+  z-index: -1;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(6, 24, 32, 0.72), rgba(6, 24, 32, 0.35));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.hero-box .content h2.despot-stat-text {
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  line-height: 1.1;
+  margin-bottom: 0.15rem;
+}
+
+.hero-content h1:not(.despot-hero-title) {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+@media (max-width: 575px) {
+  .despot-hero-title {
+    max-width: none;
+    font-size: clamp(2rem, 9vw, 2.65rem);
+  }
+  .despot-nav-shell {
+    padding: 0.55rem 0.85rem;
+    border-radius: 1.25rem;
+  }
+  .despot-logo-title {
+    font-size: 0.9rem;
+    letter-spacing: 0.16em;
+  }
+  .despot-cta.theme-btn .txt {
+    display: none;
+  }
+  .despot-cta.theme-btn::after {
+    content: "Zaron";
+  }
+}
+
+/* Offcanvas */
+.offcanvas__content .text {
+  font-family: var(--font-body);
+  color: var(--text);
+}
+
+/* Footer */
+.footer-section .footer-text-item h2 {
+  font-family: var(--font-display);
+}
+
+.search_popup {
+  display: none !important;
+}
+
+/* Custom fish cursor — desktop only (see despot-cursor.js) */
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html.despot-custom-cursor,
+  html.despot-custom-cursor *,
+  html.despot-custom-cursor *::before,
+  html.despot-custom-cursor *::after {
+    cursor: none !important;
+  }
+
+  #despot-cursor-fish {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2147483646;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    will-change: transform;
+    transition: opacity 0.2s ease;
+  }
+
+  #despot-cursor-fish img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    user-select: none;
+    -webkit-user-drag: none;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+
+  #despot-cursor-fish.is-hidden {
+    opacity: 0;
+  }
+
+  #despot-cursor-fish.is-pointer img {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 10px rgba(62, 207, 214, 0.65));
+  }
+}
+
+/* Normal document flow when ScrollSmoother is off */
+#smooth-wrapper,
+#smooth-content {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+.faq-section,
+.news-section,
+.team-section,
+.testimonial-section {
+  isolation: isolate;
+}
+
+/* Team cards: names/roles visible without hover (DOM + a11y; theme hides until :hover) */
+.team-section .team-wrapper .team-card-item .team-image .team-content,
+.team-section-2 .team-card-items-2 .team-image .team-content {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.team-section .team-wrapper .team-card-item .team-image .team-content {
+  bottom: 28px;
+}
+
+.team-section-2 .team-card-items-2 .team-image .team-content {
+  bottom: 32px;
+}
+
+.team-section .team-wrapper .team-card-item .team-image::before,
+.team-section-2 .team-card-items-2 .team-image::before {
+  opacity: 0.55;
+  visibility: visible;
+}
+
+.team-section .team-wrapper .team-card-item .team-image .team-content h3 a,
+.team-section .team-wrapper .team-card-item .team-image .team-content span,
+.team-section-2 .team-card-items-2 .team-image .team-content h3 a,
+.team-section-2 .team-card-items-2 .team-image .team-content span {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+}
+
+/* Section titles only use gt_title_anim — never instructor names */
+/* Modern footer — coral/sea hero bg + glass grid */
+.despot-footer-modern {
+  position: relative;
+  background-position: center 40% !important;
+  background-size: cover !important;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.despot-footer-modern::before {
+  display: none !important;
+}
+
+.despot-footer-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(6, 24, 32, 0.92) 0%,
+    rgba(6, 24, 32, 0.88) 45%,
+    rgba(4, 18, 28, 0.96) 100%
+  );
+  pointer-events: none;
+}
+
+.despot-footer-modern .container {
+  z-index: 1;
+}
+
+.despot-footer-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.despot-footer-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--despot-aqua);
+  margin-bottom: 0.5rem;
+}
+
+.despot-footer-cta h2 {
+  color: #fff;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  margin: 0 0 0.75rem;
+}
+
+.despot-footer-lead {
+  color: rgba(232, 246, 248, 0.85);
+  max-width: 36ch;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.despot-footer-btn.theme-btn {
+  flex-shrink: 0;
+  border-radius: 999px;
+}
+
+.despot-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: 2rem 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 991px) {
+  .despot-footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .despot-footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.despot-footer-brand p {
+  color: rgba(232, 246, 248, 0.78);
+  font-size: 0.95rem;
+  margin: 1rem 0 1.25rem;
+  max-width: 28ch;
+}
+
+.despot-footer-modern .widget-title h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.despot-footer-modern .list-area li,
+.despot-footer-modern .list-area a {
+  color: rgba(232, 246, 248, 0.82);
+  font-size: 0.95rem;
+}
+
+.despot-footer-modern .list-area a:hover {
+  color: var(--despot-aqua);
+}
+
+.despot-footer-social a {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.despot-footer-newsletter-hint {
+  color: rgba(232, 246, 248, 0.7);
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.despot-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.25rem;
+  text-align: center;
+}
+
+.despot-footer-bottom p {
+  color: rgba(232, 246, 248, 0.65);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.despot-footer-modern .search-widget input {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.team-section .team-member-name,
+.team-section-2 .team-member-name {
+  perspective: none;
+}

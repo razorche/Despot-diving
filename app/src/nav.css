@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #0a1520;
+  --color-foreground: hsl(210 40% 98%);
+  --color-muted-foreground: hsl(215 20% 72%);
+  --color-despot-aqua: #75cfd9;
+  --color-despot-aqua-bright: #a8e6ed;
+  --color-primary: #75cfd9;
+  --color-primary-foreground: #0a1520;
+  --color-accent: hsl(217 33% 17%);
+  --color-accent-foreground: hsl(210 40% 98%);
+  --color-border: hsl(214 32% 22%);
+  --color-input: hsl(214 32% 22%);
+  --color-ring: hsl(199 89% 48%);
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  --color-secondary: hsl(217 33% 17%);
+  --color-secondary-foreground: hsl(210 40% 98%);
+}
+
+#despot-framer-nav {
+  font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+  --despot-logo-aqua: #75cfd9;
+  --despot-logo-aqua-hi: #a8e6ed;
+  --despot-logo-aqua-deep: #5fb9c6;
+  --despot-nav-link: #a8e6ed;
+  --despot-nav-link-hover: #d8f5f8;
+}
+
+#despot-framer-nav .despot-nav-link {
+  color: var(--despot-nav-link) !important;
+  text-shadow: 0 0 14px rgba(168, 230, 237, 0.35);
+}
+
+#despot-framer-nav .despot-nav-link:hover {
+  color: var(--despot-nav-link-hover) !important;
+}
+
+#despot-framer-nav .despot-nav-link--active {
+  color: #ffffff !important;
+  text-shadow: 0 0 16px rgba(168, 230, 237, 0.65);
+}
+
+@keyframes despot-nav-shimmer {
+  0% {
+    transform: translateX(-120%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-12deg);
+  }
+}
+
+#despot-framer-nav .despot-nav-cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  color: #0a1520;
+  background: linear-gradient(
+    135deg,
+    var(--despot-logo-aqua-hi) 0%,
+    var(--despot-logo-aqua) 45%,
+    var(--despot-logo-aqua-deep) 100%
+  );
+  box-shadow: 0 0 0 1px rgba(168, 230, 237, 0.35), 0 4px 18px rgba(62, 207, 214, 0.35);
+  transition: box-shadow 0.35s ease, filter 0.35s ease;
+}
+
+#despot-framer-nav .despot-nav-cta::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 65%
+  );
+  transform: translateX(-120%) skewX(-12deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#despot-framer-nav .despot-nav-cta:hover {
+  box-shadow: 0 0 0 1px rgba(168, 230, 237, 0.55), 0 6px 24px rgba(117, 207, 217, 0.55);
+  filter: brightness(1.06);
+}
+
+#despot-framer-nav .despot-nav-cta:hover::after {
+  animation: despot-nav-shimmer 0.75s ease forwards;
+}
+
+#despot-framer-nav .despot-nav-cta .despot-nav-cta-label {
+  position: relative;
+  z-index: 2;
+}

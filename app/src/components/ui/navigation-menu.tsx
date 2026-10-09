@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent, type Variants } from 'framer-motion';
 import { LayoutGrid } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -31,7 +31,7 @@ const SHEET_ITEMS = [
 
 const EXPAND_SCROLL_THRESHOLD = 80;
 
-const containerVariants = {
+const containerVariants: Variants = {
   expanded: {
     y: 0,
     opacity: 1,
@@ -61,17 +61,17 @@ const containerVariants = {
   },
 };
 
-const logoVariants = {
+const logoVariants: Variants = {
   expanded: { opacity: 1, x: 0, scale: 1, transition: { type: 'spring', damping: 18, stiffness: 280 } },
   collapsed: { opacity: 0, x: -12, scale: 0.92, transition: { duration: 0.22 } },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   expanded: { opacity: 1, x: 0, scale: 1, transition: { type: 'spring', damping: 15 } },
   collapsed: { opacity: 0, x: -20, scale: 0.95, transition: { duration: 0.2 } },
 };
 
-const collapsedIconVariants = {
+const collapsedIconVariants: Variants = {
   expanded: { opacity: 0, scale: 0.8, transition: { duration: 0.2 } },
   collapsed: {
     opacity: 1,
